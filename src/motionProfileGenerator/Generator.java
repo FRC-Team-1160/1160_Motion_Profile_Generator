@@ -37,8 +37,8 @@ public class Generator {
 		left = modifier.getLeftTrajectory();
 		right = modifier.getRightTrajectory();
 		
-		leftOutput = new File(filename + "_LEFT.csv");
-		rightOutput = new File(filename + "_RIGHT.csv");
+		leftOutput = new File("C:/Users/Titanium/git/1160_Motion_Profile_Generator/generatedTrajectories/" + filename + "_LEFT.csv");
+		rightOutput = new File("C:/Users/Titanium/git/1160_Motion_Profile_Generator/generatedTrajectories/" + filename + "_RIGHT.csv");
 		
 		Pathfinder.writeToCSV(leftOutput, left);
 		Pathfinder.writeToCSV(rightOutput, right);
